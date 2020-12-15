@@ -1,0 +1,38 @@
+{
+  "name": "rnative-sensor-manager",
+  "version": "0.1.0",
+  "description": "A react-native module that allows you to use the accelerometer, gyroscope and magnetometer and Android devices",
+  "author": "Javier Aceña (j0nl1) <jonlitech@gmail.com>",
+  "scripts": {},
+  "homepage": "https://github.com/j0nl1/rnative-sensor-manager#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j0nl1/rnative-sensor-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j0nl1/rnative-sensor-manager/issues"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "android"
+  ],
+  "keywords": [
+    "react-native",
+    "android",
+    "rnative-sensor-manager",
+    "accelerometer",
+    "gyroscope",
+    "magnetometer",
+    "thermometer",
+    "step-counter"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-native": "^0.63.4"
+  }
+}
