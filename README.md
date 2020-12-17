@@ -25,6 +25,19 @@ DeviceEventEmitter.addListener("orientation", (data) => {
 SensorManager.stopOrientation();
 ```
 
+### Light
+
+```js
+import SensorManager from "rnative-sensor-manager";
+SensorManager.startLight(100);
+DeviceEventEmitter.addListener("light", (data) => {
+  /**
+   * data.lux
+   **/
+});
+SensorManager.stopLight();
+```
+
 ## License
 
 MIT
