@@ -38,6 +38,19 @@ DeviceEventEmitter.addListener("light", (data) => {
 SensorManager.stopLight();
 ```
 
+### Thermometer
+
+```js
+import SensorManager from "rnative-sensor-manager";
+SensorManager.startThermometer(100);
+DeviceEventEmitter.addListener("temperature", (data) => {
+  /**
+   * data.temperature
+   **/
+});
+SensorManager.stopThermometer();
+```
+
 ## License
 
 MIT
