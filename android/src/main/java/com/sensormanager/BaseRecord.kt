@@ -1,4 +1,4 @@
-package com.managersensor
+package com.sensormanager
 
 import android.content.Context
 import android.hardware.Sensor
