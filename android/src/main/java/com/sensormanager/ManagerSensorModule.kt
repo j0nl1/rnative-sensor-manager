@@ -7,6 +7,7 @@ import com.facebook.react.bridge.ReactMethod
 
 class SensorManagerModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
   private val orientationRecord: OrientationRecord = OrientationRecord(reactContext)
+  private val thermometerRecord: ThermometerRecord = ThermometerRecord(reactContext)
   private val lightRecord: LightRecord = LightRecord(reactContext)
   private val defaultRefresh: Int = 1000
 
@@ -32,6 +33,16 @@ class SensorManagerModule(reactContext: ReactApplicationContext) : ReactContextB
     @ReactMethod
     fun stopLight() {
       lightRecord.stop()
+    }
+
+     @ReactMethod
+    fun startThermometer(freq: Int?) {
+      thermometerRecord.start(freq ?: defaultRefresh)
+    }
+
+    @ReactMethod
+    fun stopThermometer() {
+      thermometerRecord.stop()
     }
 
 }
