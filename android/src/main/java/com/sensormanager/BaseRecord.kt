@@ -45,7 +45,7 @@ abstract class BaseRecord(reactContext: ReactApplicationContext) : SensorEventLi
     }
   }
 
-  abstract fun createOrientationMap(): WritableMap
+  abstract fun createMap(): WritableMap
 
   override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {}
 

@@ -22,10 +22,10 @@ class LightRecord(reactContext: ReactApplicationContext) : BaseRecord(reactConte
     }
   }
 
-  override fun createOrientationMap(): WritableMap {
-    val orientationMap = Arguments.createMap()
-    orientationMap.putInt("lux", lightValue)
-    return orientationMap
+  override fun createMap(): WritableMap {
+    val map = Arguments.createMap()
+    map.putInt("lux", lightValue)
+    return map
   }
 
 }
