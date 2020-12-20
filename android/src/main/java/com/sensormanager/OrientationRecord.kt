@@ -48,7 +48,7 @@ class OrientationRecord(reactContext: ReactApplicationContext) : BaseRecord(reac
     }
   }
 
-  override fun createOrientationMap(): WritableMap {
+  override fun createMap(): WritableMap {
     val orientationMap = Arguments.createMap()
 
     var azimuth = (Math.toDegrees(orientationAngles[0].toDouble()) % 360.0f)

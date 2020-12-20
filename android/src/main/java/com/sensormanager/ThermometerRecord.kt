@@ -22,10 +22,10 @@ class ThermometerRecord(reactContext: ReactApplicationContext) : BaseRecord(reac
     }
   }
 
-  override fun createOrientationMap(): WritableMap {
-    val orientationMap = Arguments.createMap()
-    orientationMap.putInt("temperature", temperatureValue)
-    return orientationMap
+  override fun createMap(): WritableMap {
+    val map = Arguments.createMap()
+    map.putInt("temperature", temperatureValue)
+    return map
   }
 
 }

@@ -51,6 +51,19 @@ DeviceEventEmitter.addListener("temperature", (data) => {
 SensorManager.stopThermometer();
 ```
 
+### Proximity
+
+```js
+import SensorManager from "rnative-sensor-manager";
+SensorManager.startProximity(100);
+DeviceEventEmitter.addListener("proximity", (data) => {
+  /**
+   * data.proximity
+   **/
+});
+SensorManager.stopProximity();
+```
+
 ## License
 
 MIT
