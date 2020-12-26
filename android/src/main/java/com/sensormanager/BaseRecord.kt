@@ -39,7 +39,7 @@ abstract class BaseRecord(reactContext: ReactApplicationContext) : SensorEventLi
     try {
       mReactContext
         .getJSModule(RCTDeviceEventEmitter::class.java)
-        .emit(eventName, createOrientationMap())
+        .emit(eventName, createMap())
     } catch (e: RuntimeException) {
       Log.e("ERROR", "java.lang.RuntimeException: Trying to invoke JS before CatalystInstance has been set!")
     }

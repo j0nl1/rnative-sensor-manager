@@ -1,5 +1,5 @@
 buildscript {
-  def kotlin_version = rootProject.ext.has('kotlinVersion') ? rootProject.ext.get('kotlinVersion') : project.properties['ManagerSensor_kotlinVersion']
+  def kotlin_version = rootProject.ext.has('kotlinVersion') ? rootProject.ext.get('kotlinVersion') : project.properties['SensorManager_kotlinVersion']
 
   repositories {
     google()
@@ -7,7 +7,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.2.1'
+    classpath 'com.android.tools.build:gradle:3.5.3'
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
   }
@@ -17,11 +17,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 def getExtOrDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['ManagerSensor_' + name]
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['SensorManager_' + name]
 }
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties['ManagerSensor_' + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties['SensorManager_' + name]).toInteger()
 }
 
 android {
