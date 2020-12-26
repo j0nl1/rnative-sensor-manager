@@ -83,9 +83,22 @@ DeviceEventEmitter.addListener("pressure", (data) => {
 SensorManager.stopPressure();
 ```
 
+### Humidity
+
+```js
+import SensorManager from "rnative-sensor-manager";
+SensorManager.startHumidity(100);
+DeviceEventEmitter.addListener("humidity", (data) => {
+  /**
+   * data.humidity
+   **/
+});
+SensorManager.stopHumidity();
+```
+
 ## Acknowledgements
 
-- [`react-native-sensor-manager`](https://www.npmjs.com/package/react-native-sensor-manager) - has been a great source of inspiration for this project.
+- [`react-native-sensor-manager`](https://www.npmjs.com/package/react-native-sensor-manager) has been a great source of inspiration for this project.
 
 ## License
 

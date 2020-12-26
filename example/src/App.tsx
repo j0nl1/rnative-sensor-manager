@@ -6,6 +6,7 @@ import DeviceProximity from "./modules/DeviceProximity";
 import DeviceOrientation from "./modules/DeviceOrientation";
 import DeviceThermometer from "./modules/DeviceThermometer";
 import DevicePressure from "./modules/DevicePressure";
+import DeviceHumidity from "./modules/DeviceHumidity";
 
 export const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ export const App: React.FC = () => {
       <DeviceOrientation />
       <DeviceLight />
       <DeviceThermometer />
+      <DeviceHumidity />
       <DeviceProximity />
       <DevicePressure />
     </View>
