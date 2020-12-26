@@ -2,6 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "esnext",
-    "outDir": "./lib/esm"
+    "outDir": "./lib/esm",
+    "declaration": true,
+    "declarationDir": "./lib/typescript"
   }
 }

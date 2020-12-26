@@ -9,6 +9,7 @@ class SensorManagerModule(reactContext: ReactApplicationContext) : ReactContextB
   private val orientationRecord: OrientationRecord = OrientationRecord(reactContext)
   private val thermometerRecord: ThermometerRecord = ThermometerRecord(reactContext)
   private val proximityRecord: ProximityRecord = ProximityRecord(reactContext)
+  private val humidityRecord: HumidityRecord = HumidityRecord(reactContext)
   private val pressureRecord: PressureRecord = PressureRecord(reactContext)
   private val lightRecord: LightRecord = LightRecord(reactContext)
   private val defaultRefresh: Int = 1000
@@ -65,6 +66,16 @@ class SensorManagerModule(reactContext: ReactApplicationContext) : ReactContextB
     @ReactMethod
     fun stopPressure() {
       pressureRecord.stop()
+    }
+
+     @ReactMethod
+    fun startHumidity(freq: Int?) {
+      humidityRecord.start(freq ?: defaultRefresh)
+    }
+
+    @ReactMethod
+    fun stopHumidity() {
+      humidityRecord.stop()
     }
 
 }

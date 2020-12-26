@@ -11,6 +11,8 @@ type SensorManagerTypes = {
   stopProximity(): void;
   startPressure(refreshFreq?: number): void;
   stopPressure(): void;
+  startHumidity(refreshFreq?: number): void;
+  stopHumidity(): void;
 };
 
 const { SensorManager } = NativeModules;
