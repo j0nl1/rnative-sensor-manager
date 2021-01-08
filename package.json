@@ -1,10 +1,10 @@
 {
   "name": "rnative-sensor-manager",
-  "version": "0.9.2",
+  "version": "0.9.6",
   "description": "A react-native wrapper that allows you to use android and iOS native sensors",
   "author": "Javier Aceña (j0nl1) <jonlitech@gmail.com>",
   "scripts": {
-    "prepublish": "yarn build",
+    "prepublish": "npm run build",
     "build": "rimraf ./lib && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json"
   },
   "homepage": "https://github.com/j0nl1/rnative-sensor-manager#readme",
@@ -22,7 +22,9 @@
   "files": [
     "src",
     "lib",
-    "android"
+    "android/src",
+    "android/build.gradle",
+    "android/gradle.properties"
   ],
   "keywords": [
     "rnative-sensor-manager",
@@ -37,7 +39,7 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": ">=0.60"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

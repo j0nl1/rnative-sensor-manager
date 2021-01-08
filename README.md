@@ -14,6 +14,15 @@ This package is a wrapper for using sensor native modules
 npm install rnative-sensor-manager
 ```
 
+## Support 
+
+This project is under development, you can find the roadmap in github projects.
+
+| Platform        | Pressure Sensor           | Light Sensor  | Orientation Sensor| Humidity Sensor| Proximity Sensor| Temperature Sensor | Magnetic Sensor| Step Sensor | Gravity Sensor
+| ---------- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Android | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| iOS     | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+
 ## API Usage
 
 ### Orientation
